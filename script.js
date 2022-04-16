@@ -1,6 +1,7 @@
 "use strict";
 // Inspired By
 // https://codepen.io/abeatrize/pen/LJqYey
+gsap.config({trialWarn: false});
 var _a, _b;
 // Bongo Cat originally created by @StrayRogue and @DitzyFlama
 const ID = "bongo-cat";

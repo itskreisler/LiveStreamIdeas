@@ -1,0 +1,18 @@
+{
+  "name": "LiveStreamIdeas",
+  "short_name": "LiveStreamIdeas",
+  "start_url": "index.html",
+  "description" : "LiveStreamIdeas is Stream Ideas Generator",
+  "display": "standalone",
+  "background_color": "#222222",
+  "theme_color": "#e95c4d",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./public/img/multiple-social-media_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ body {
 
 .container svg {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   overflow: visible;
 }
 
@@ -100,4 +100,19 @@ body::-webkit-scrollbar-track {
   opacity: 0.8;
   cursor: default;
   pointer-events: none;
+}
+a.footer-text {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  transition: 150ms ease color;
+}
+a.footer-text span {
+  color: #4d50d5;
 }

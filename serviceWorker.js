@@ -1,14 +1,16 @@
-const CACHE_NAME = "pokeApi-v1";
+const CACHE_NAME = "livestreamideas-v1";
 const assets = [
   "./index.html",
+  "./css/normalize.min.css",
+  "./css/bootstrap.min.css",
   "./css/style.css",
-  "./js/app.js",
   "./js/pluglins/lodash.min.js",
   "./js/pluglins/DrawSVGPlugin3.min.js",
   "./js/pluglins/gsap-latest-beta.min.js",
+  "./js/app.js",
   "./favicons/favicon-16x16.png",
   "./public/img/multiple-social-media_144.png",
-  "./public/img/multiple-social-media.png"
+  "./public/img/multiple-social-media.png",
 ];
 
 self.addEventListener("install", (e) => {

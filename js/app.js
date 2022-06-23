@@ -255,7 +255,7 @@ const ideas = [
 ];
 function randomidea() {
   let number = Math.floor(Math.random() * (ideas.length - 0) + 0);
-  console.log(JSON.stringify({ number: number, text: ideas[number] }));
+  console.log(JSON.stringify({ id: number, text: ideas[number] }));
   return ideas[number];
 }
 document.addEventListener("DOMContentLoaded", () => {
@@ -272,16 +272,24 @@ document.addEventListener("DOMContentLoaded", () => {
         (" " !== e.key && "Space" !== e.key && "Spacebar" !== e.code) ||
           (t.innerHTML = randomidea());
       }));
-      /* */
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("./serviceWorker.js")
-          .then((res) => {
-            console.log("Service Woker registrado");
-          })
-          .catch((err) => {
-            console.log("ERROR AL REGISTART SERVICE WORKER ",err);
-          });
+    /* */
+    window.addEventListener("scroll", (e) => {
+      const { scrollHeight, clientHeight, scrollTop } =
+        document.documentElement;
+      if (clientHeight + scrollTop >= scrollHeight) {
+        console.log("the final document");
       }
+    });
+    /* */
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("./serviceWorker.js")
+        .then((res) => {
+          console.log("Service Woker registrado");
+        })
+        .catch((err) => {
+          console.log("ERROR AL REGISTART SERVICE WORKER ", err);
+        });
+    }
   })();
 });
